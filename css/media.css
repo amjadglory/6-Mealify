@@ -1,0 +1,296 @@
+@media screen and (min-width: 460px) {
+  /*! width */
+  .sm-100 {
+    width: 100%;
+  }
+  .sm-75 {
+    width: 75%;
+  }
+  .sm-50 {
+    width: 50%;
+  }
+  .sm-30 {
+    width: 30%;
+  }
+  .sm-25 {
+    width: 25%;
+  }
+  .sm-16 {
+    width: 16%;
+  }
+
+  /*! special */
+  /*? nav */
+
+  /*? home */
+  .inner-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /*! width */
+  .md-100 {
+    width: 100%;
+  }
+  .md-75 {
+    width: 75%;
+  }
+  .md-50 {
+    width: 50%;
+  }
+  .md-47 {
+    width: 47%;
+  }
+  .md-30 {
+    width: 30%;
+  }
+  .md-25 {
+    width: 25%;
+  }
+  .md-16 {
+    width: 16%;
+  }
+
+  /*! special */
+  /*? nav */
+
+  /*? home */
+  .inner-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inner-home > div {
+    padding: 0 10px;
+  }
+
+  .home-text-btns {
+    justify-content: space-between;
+  }
+
+  /*? gallery */
+  .gallery-imgs {
+    flex-direction: row;
+  }
+  .gallery-imgs > div:nth-child(1) {
+    order: 1;
+  }
+  .gallery-imgs > div:nth-child(2) {
+    order: 3;
+    gap: 0;
+  }
+  .gallery-imgs > div:nth-child(3) {
+    order: 5;
+  }
+  .gallery-imgs > div:nth-child(4) {
+    order: 7;
+  }
+  .gallery-imgs > div:nth-child(5) {
+    order: 2;
+  }
+  .gallery-imgs > div:nth-child(6) {
+    order: 4;
+  }
+  .gallery-imgs > div:nth-child(7) {
+    order: 6;
+  }
+
+  /* contact */
+  .contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* footer */
+  .inner-footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .subs {
+    order: 3;
+  }
+  .touch {
+    order: 2;
+  }
+  .subs-input input {
+    width: 75%;
+  }
+  .subs-input button {
+    width: 20%;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /*! width */
+  .lg-100 {
+    width: 100%;
+  }
+  .lg-75 {
+    width: 75%;
+  }
+  .lg-50 {
+    width: 50%;
+  }
+  .lg-30 {
+    width: 30%;
+  }
+  .lg-25 {
+    width: 25%;
+  }
+  .lg-16 {
+    width: 16%;
+  }
+
+  /*! special */
+  /*? nav */
+  .nav-list-x {
+    display: none;
+  }
+  .nav-list {
+    position: relative;
+    display: block;
+    border: none;
+  }
+  .nav-list li ul {
+    display: flex;
+  }
+  .fa-bars {
+    display: none;
+  }
+  /*? home */
+  #home {
+    height: 100vh;
+  }
+  .inner-home {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .home-img img,
+  .home-text {
+    width: 80%;
+  }
+
+  /*? gallery */
+  .gallery-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: baseline;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /*! width */
+  .xl-100 {
+    width: 100%;
+  }
+  .xl-75 {
+    width: 75%;
+  }
+  .xl-50 {
+    width: 50%;
+  }
+  .xl-45 {
+    width: 45%;
+  }
+  .xl-30 {
+    width: 30%;
+  }
+  .xl-25 {
+    width: 25%;
+  }
+  .xl-16 {
+    width: 16%;
+  }
+
+  /*! special */
+  /*? nav */
+  .nav-list-x {
+    display: none;
+  }
+  .nav-list {
+    position: relative;
+    display: block;
+    border: none;
+  }
+  .nav-list li ul {
+    display: flex;
+  }
+  .fa-bars {
+    display: none;
+  }
+  /*? home */
+  #home {
+    height: 100vh;
+  }
+
+  /*? gallery */
+  .gallery-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: baseline;
+  }
+
+  /* footer */
+  .inner-footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .subs {
+    order: 2;
+  }
+  .touch {
+    order: 3;
+  }
+}
+@media screen and (min-width: 1536px) {
+  /*! width */
+  .xxl-100 {
+    width: 100%;
+  }
+  .xxl-75 {
+    width: 75%;
+  }
+  .xxl-50 {
+    width: 50%;
+  }
+  .xxl-30 {
+    width: 30%;
+  }
+  .xxl-25 {
+    width: 25%;
+  }
+  .xxl-16 {
+    width: 16%;
+  }
+
+  /*! special */
+  /*? nav */
+  .nav-list-x {
+    display: none;
+  }
+  .nav-list {
+    position: relative;
+    display: block;
+    border: none;
+  }
+  .nav-list li ul {
+    display: flex;
+  }
+  .fa-bars {
+    display: none;
+  }
+  /*? home */
+  #home {
+    height: 100vh;
+  }
+
+  /*? gallery */
+}
