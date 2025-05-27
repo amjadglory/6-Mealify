@@ -8,8 +8,8 @@
   list-style: none;
 }
 
-html,
-body {
+:root {
+  /* scroll-behavior: smooth; */
   scroll-behavior: smooth;
 }
 
@@ -19,8 +19,6 @@ ul {
 a {
   color: inherit;
 }
-
-
 
 /*! Global classes */
 
@@ -72,28 +70,26 @@ a {
 
 /*! Target */
 
-:root:has(#home:target) a[href="#home"]{
+  :root:has(#home:target) a[href="#home"] {
+    border-bottom: solid 3px var(--darkLightColor);
+    padding-bottom: 10px;
+    transition: all 0.5;
+  }
+:root:has(#chefs:target) a[href="#chefs"] {
   border-bottom: solid 3px var(--darkLightColor);
   padding-bottom: 10px;
   transition: all 0.5;
 }
-:root:has(#chefs:target) a[href="#chefs"]{
+:root:has(#gallery:target) a[href="#gallery"] {
   border-bottom: solid 3px var(--darkLightColor);
   padding-bottom: 10px;
   transition: all 0.5;
 }
-:root:has(#gallery:target) a[href="#gallery"]{
+:root:has(#contact:target) a[href="#contact"] {
   border-bottom: solid 3px var(--darkLightColor);
   padding-bottom: 10px;
   transition: all 0.5;
 }
-:root:has(#contact:target) a[href="#contact"]{
-  border-bottom: solid 3px var(--darkLightColor);
-  padding-bottom: 10px;
-  transition: all 0.5;
-}
-
-
 
 /* محاوله فاشله 😅   */
 /* .inner-nav .nav-list li ul li a {
@@ -114,15 +110,14 @@ a {
   border-bottom: 2px solid var(--darkLightColor);
 } */
 
-::selection{
+::selection {
   background-color: var(--darkLightColor);
   color: var(--whiteText);
 }
-#DL:checked ~ #nav::selection{
+#DL:checked ~ #nav::selection {
   background-color: var(--darkColor);
   color: black;
 }
-
 
 /*! nav */
 #nav {
@@ -570,8 +565,10 @@ a {
 
 /*! gallery */
 
-#gallery {
-  background-color: #eee;
+/* #gallery {
+
+  height: 200vh;
+
 }
 
 .gallery-imgs {
@@ -610,6 +607,114 @@ a {
   color: var(--whiteText);
 }
 #DL:checked ~ #gallery .container .inner-gallery .gallery-heading span {
+  color: var(--darkColor);
+} */
+/* #gallery {
+  background-color: #eeeeee;
+}
+
+.food-card {
+  position: relative;
+  border: white 4px solid;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.food-card,
+.food-card img {
+  width: 100%;
+}
+.food-card img {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.food-card .gallery-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #20202067;
+  transition: all 0.5s;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.food-card .gallery-layer h2 {
+  font-family: var(--interFont);
+  font-size: 24px;
+  font-weight: 700;
+}
+.food-card .gallery-layer p {
+  font-family: var(--openFont);
+  font-size: 16px;
+  font-weight: 400;
+}
+.food-card:hover .gallery-layer {
+  top: 0px;
+}
+.food-card:hover img {
+  transform: scale(1.2);
+} */
+#gallery{
+    background-color: #eee;
+}
+.gallery-imgs{
+  --gap: 20px;
+  gap: var(--gap);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 1050px;
+}
+.gallery-imgs picture{
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position:  relative;
+  overflow: hidden;
+  border: white solid 4px;
+}
+.gallery-imgs img{
+  width: 100%;
+  transition: scale 0.5s;
+  scale: 1.05;
+}
+.gallery-img-layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  background-color: #00000096;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  transition: top 0.5s;
+}
+.gallery-img-layer h3{
+  font-family: var(--interFont);
+}
+.gallery-img-layer p{
+  font-family: var(--openFont);
+}
+.gallery-imgs picture:hover .gallery-img-layer{
+  top: 0;
+}
+.gallery-imgs picture:hover img{
+  scale : 1.1;
+}
+
+
+/*? gallery dark mood */
+#DL:checked ~ #gallery .container .gallery-heading p {
+  color: var(--whiteText);
+}
+#DL:checked ~ #gallery .container .gallery-heading p span {
   color: var(--darkColor);
 }
 
