@@ -117,7 +117,7 @@ a {
   background-color: var(--darkLightColor);
   color: var(--whiteText);
 }
-#DL:checked ~ #nav::selection {
+#DL:checked ~ ::selection {
   background-color: var(--darkColor);
   color: black;
 }
